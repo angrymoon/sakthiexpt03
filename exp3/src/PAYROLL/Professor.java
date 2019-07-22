@@ -1,4 +1,4 @@
-package payroll;
+package PAYROLL;
 
 import java.util.Scanner;
 
@@ -35,12 +35,12 @@ public class Professor extends Employee {
 
 	public void calculation()
 	{
-		da=(97/100)*basic_pay;
-		hra=(10/100)*basic_pay;
-		pf=(12/100)*basic_pay;
-		staff_club=(0.1/100)*basic_pay;
+		da=(97.0/100.0)*basic_pay;
+		hra=(10/100.0)*basic_pay;
+		pf=(12.0/100.0)*basic_pay;
+		staff_club=(0.1/100.0)*basic_pay;
 		gross_salary=da+hra+pf+staff_club;
-		net_salary=basic_pay-gross_salary;
+		net_salary=gross_salary-(pf+staff_club);
 	}
 	
 	

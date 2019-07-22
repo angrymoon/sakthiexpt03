@@ -1,4 +1,4 @@
-package payroll;
+package PAYROLL;
 import java.util.Scanner;
 
 public class Employee {

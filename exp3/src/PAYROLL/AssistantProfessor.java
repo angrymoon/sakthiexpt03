@@ -1,14 +1,14 @@
-package payroll;
+package PAYROLL;
 
 public class AssistantProfessor extends Employee {
 	
-	private static double basic_pay;
-	public static double da;
-	public static double hra;
-	public static double pf;
-	public static double staff_club;
-	public static double gross_salary;
-	public static double net_salary;
+	private double basic_pay;
+	public  double da;
+	public  double hra;
+	public  double pf;
+	public  double staff_club;
+	public  double gross_salary;
+	public  double net_salary;
 	
 	
 	public  AssistantProfessor()
@@ -28,20 +28,20 @@ public class AssistantProfessor extends Employee {
 		
 	}
 
-	public static double calculation()
+	public  void  calculation()
 	{
 		da=97.0/100*basic_pay;
-		return da;
-		ra=10.0/100*basic_pay;
-		return hra;
+		//return da;
+		hra=10.0/100*basic_pay;
+		//return hra;
 		pf=12.0/100*basic_pay;
-		return pf;
+		//return pf;
 		staff_club=0.1/100*basic_pay;
-		return staff_club;
+		//return staff_club;
 		gross_salary=da+hra+pf+staff_club;
-		return gross_salary;
-		net_salary=basic_pay*gross_salary;
-		return net_salary;
+		//return gross_salary;
+		net_salary=gross_salary-(pf+staff_club);
+		//return net_salary;
 	}
 	
 	
